@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    color: rgb(0, 60, 128);
+    color: green; 
+    background-image: url("takeoff.jpg");
+}
+
+.ori {
+    color: deepskyblue;
+    padding: 20px;
+}
+
+#two {
+    color: red;
+}
+
+#logo {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+marquee {
+    color: rgb(0, 255, 157);
+}
+
+
+h3 {
+    color: red;
+}
+
+@media screen and (width >= 992px) {
+    .arin {
+        position: relative;
+        margin-left: 370px;
+        margin-right: 370px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .arin {
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .arin {
+        position: relative;
+        margin-left: 200px;
+        margin-right: 200pxx;
+    }
+}
+
+.iru {
+    height: 10vh;
+    position: relative;
+    top: 40vh;
+}
+
+.err {
+    color: red;
+}
+
+form {
+    text-align: center;
+}
+
+#text {
+    margin-bottom: 10px;
+}
+
+#password {
+    margin-bottom: 10px;
+}
+
+table {
+    border: 1px solid yellow;
+}

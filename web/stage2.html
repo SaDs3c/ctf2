@@ -1,0 +1,23 @@
+{{template "index" .}}
+
+{{define "arin"}}
+
+<div class="arin">
+    <p>
+        <h3>Level 2</h3>
+        <p>Credentials is at the at👇</p>
+        <span style="color: green;">Endpoint: <span style="color: rgb(56, 172, 180);">/static/config/credentials.json</span></span>
+        <br><br>
+        <p style="color: red;">Hint:</p>
+        <p>Dey play😁</p>
+        <br>
+
+    <p style="color: red;">{{.error}}</p>
+    <form method="post" action="/level2" autocomplete="off">
+        <input id="text" name="username" placeholder="Username"><br>
+        <input id="password" name="password" placeholder="Password"><br>
+        <input type="submit" value="login">
+    </form>
+</div>
+
+{{end}}

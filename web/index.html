@@ -1,0 +1,29 @@
+{{define "index"}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ori">
+        <div id="logo">
+            <img src="static/sadsec.jpg" width="50px" height="50px"/>
+            <h1> SaDsEc Hacking Tournament</h1> 
+            <h2><span id="two">A.K.A</span> SaDsEc CTF</h2>
+        </div>
+    </div>
+
+    <marquee>Welcome to SaDsEc Hacking Tournament Season 2</marquee>
+
+    {{ template "arin" .}}
+    
+    <div class="iru">
+        <p>SaDsEc <br>Laughing at your security</p>
+    </class>
+</body>
+</html>
+{{end}}

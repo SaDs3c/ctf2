@@ -1,0 +1,24 @@
+{{template "index" .}}
+
+{{define "arin"}}
+
+<div class="arin">
+    <h3>Level 4</h3>
+    <p>Crash the server to get the flag.
+        Flag is hex version of the codepoint
+    </p><br>
+
+    <p style="color: red;"> Hint </p>
+    <p> File Upload Limit</p>
+
+    <p style="color: red;">{{.error}}</p>
+    <p style="color: blue;">{{.flag}}</p>
+    <form method="post" action="/level4" enctype="multipart/form-data" autocomplete="off">
+        <input type="text" name="text" placeholder="Flag"><br><br>
+        <input type="file" name="upload"><br><br>
+        <input type="submit" name="submit">
+    </form>
+
+</div>
+
+{{end}}

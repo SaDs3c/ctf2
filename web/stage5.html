@@ -1,0 +1,23 @@
+{{template "index" .}}
+
+{{define "arin"}}
+
+<div id="arin">
+    <h3>Level 5</h3>
+    <p>Download the file and look for the flag</p><br>
+
+    <p style="color: red;">Hint:</p>
+    <p>Reverse Engineering</p><br>
+    
+    
+    <p style="color: red;">At your own Risk 😆</p>
+    <a href="static/re/sadcrackme.exe" download>Click ME</a> <span>to download the file</span>
+    <br><br>
+    <p style="color: red;">{{.error}}</p>
+    <form method="post" action="/level5" autocomplete="off">
+        <input type="text" name="text" placeholder="Flag"><br><br>
+        <input type="submit" name="submit">
+    </form>
+</div>
+
+{{end}}

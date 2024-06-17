@@ -1,0 +1,28 @@
+{{template "index" .}}
+
+{{define "arin"}}
+<div class="arin">
+
+    <h3> Level 3</h3>
+    <p>
+        You are to find an hex encoded data, decoded version of the data is the 
+        flag
+    </p><br>
+
+    <p style="color: red;">Hint:</p>
+    <p> 
+        HTTP headers are used to pass additional 
+        information between the clients and the 
+        server through the request and response header.
+    </p><br>
+
+    <form method="post" action="/level3" autocomplete="off">
+        <p class="err">{{.error}}</p>
+        <input type="text" name="text" placeholder="Flag"><br><br>
+        <input type="submit">
+    </form>
+        
+        
+</div>
+
+{{end}}

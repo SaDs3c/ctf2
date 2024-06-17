@@ -1,0 +1,53 @@
+{{template "index" .}}
+
+{{define "arin"}}
+
+<div class="arin">
+    <p>
+        <h3>Notice!!! Notice!!! Notice!!!</h3>
+        For those who did the last tournament you 
+        already know how this work, and for our new 
+        members who do not, let's quickly explain how this work.
+        Like we did the first Tournament, each webpage is a problem to be solve,
+        including this webpage you are now.
+    </p><br>
+    <h3>How it works</h3>
+    <p>
+        There are multiple of webpages you are to bypass by finding the flag.
+        each webpage contain an input field or input fields to submit your flag. if the flag you
+        submit is correct that mean you solved the webpage and you
+        will be move to the next webpage and so on.
+    </p><br>
+
+    <p>
+        Just like the last Hacking Tournament, the first challenge start with a puzzle,
+        and the first challenge always have two ways it can be solve
+    <p>
+    <ol>
+        <li><span id="two"></span>Correct answer to the puzzle is the flag</li>
+        <li><span id="two"></span>Username of any of the admin is the flag</li>
+    </ol>
+    <p>
+        Member of SaDsEc are giving the first webpage as bonus meaning
+        having not to solve(option 2) the puzzle was due to 
+        their phenomenal contribution to the Country National Security in the
+        past😁✌️.   
+    </p><br><br>
+
+
+    <h3> Level 1 </h3>
+    <p>The CEO of SaDsEc emailed some code to the CTO. The codes are 
+        "SAGAS, ATTACK, REPAPER, RACECAR". all the words have something in common
+        except one. Can you help find the fake word</p>
+
+         <p ><span style="color: red;">Hint: </span> Palindromes </p>
+         <span>The fake word is the flag</span>
+
+         <p class="err">{{.error}}</p>
+         <form method="post" action="/level1" autocomplete="off">
+            <input type="text" name="text" placeholder="Flag">
+            <input type="submit">
+         </form>
+</div>
+
+{{end}}
